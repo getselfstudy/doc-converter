@@ -17,7 +17,7 @@ npm install @getselfstudy/doc-converter
 ## Usage
 
 ```javascript
-const { epub, pmc } = require('@getselfstudy/doc-converter')
+const { epub, pmc, docx } = require('@getselfstudy/doc-converter')
 
 async function resolveAsset(filepath) {
   // upload or save asset file and return the new URL or path
@@ -25,7 +25,8 @@ async function resolveAsset(filepath) {
 }
 
 const epubHtml = await epub(epubfile, resolveAsset)
-const pmcHtml = await pmc(epubfile, resolveAsset)
+const pmcHtml = await pmc(pmcfile, resolveAsset)
+const docxHtml = await pmc(docxfile, resolveAsset)
 
 // Do something interesting and useful with the html
 ```

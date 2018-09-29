@@ -1,7 +1,7 @@
 {
   "name": "@getselfstudy/doc-converter",
-  "version": "0.1.0",
-  "description": "Convert a JATS, EPUB or other pandoc supported input file to an HTML5 bundle.",
+  "version": "0.2.0",
+  "description": "Convert a JATS, EPUB, DOCX or other pandoc supported input file to an HTML5 bundle.",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "example:epub": "node example/epub2html.js example/sample.epub public/epub.html",
     "example:pmc": "node example/pmc2html.js example/sample.tgz public/pmc.html",
+    "example:docx": "node example/docx2html.js example/sample.docx public/docx.html",
     "examples": "run-p example:*",
     "clean": "rimraf public"
   }
